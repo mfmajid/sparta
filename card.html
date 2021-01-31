@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday to You</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+
+        body {
+            background-color: #e8344e;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 40px auto;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;   
+        }
+
+        .letter-closed{
+            display: block;
+        }
+        .letter-opened{
+            display: none;
+        }
+
+        .rtanny{
+            height: 200px;
+            width: 200px;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon8.gif');
+            background-size: cover;
+            background-position: auto;
+            background-color: white;
+            border-radius: 100px;
+            border: 5px solid white;
+            margin: 75px auto 20px auto;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .letter-tittle{
+            color: white;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox{
+            background-color: ivory;
+            width: 480px;
+            margin: 8px auto 4px auto;
+            padding: 22px;
+            color: brown;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox{
+            width: 300px;
+            padding: 18px;
+            }
+            .rtanny{
+                width: 140px;
+                height: 140px;
+                margin: 45px auto 20px auto;
+            }
+            .letter-tittle{
+                font-size: 22px;
+            }
+            .envelope{
+                width: 150px;
+                height: 150px;
+                margin: 180px auto 10px auto;
+            }
+            .envelope-msg{
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="letter-closed">
+        <div class="envelope"></div>
+        <h2 class="envelope-msg">Please click this envelope!</h2>
+    </div>
+
+    <div class="letter-opened">
+        <div class="rtanny"></div>
+        <h1 class="letter-tittle">Congratulation!</h1>
+        <div class="messagebox">
+            Happy birthday to you I miss you so much<br/>
+            You are my best friend<br/>
+            Love <br/>
+            Joseph <br/>
+        </div>
+    </div>
+
+</body>
+</html>
